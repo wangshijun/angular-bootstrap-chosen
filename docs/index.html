@@ -1,94 +1,145 @@
 <html ng-app="chosenExampleApp">
 <head>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min.js"></script>
+    <script src="../vendor/jquery/dist/jquery.js"></script>
+    <script src="../vendor/angular/angular.js"></script>
+    <script src="../vendor/chosen/chosen.jquery.js"></script>
 
-  <script src="vendor/chosen.jquery.js"></script>
+    <script src="../src/js/chosen.js"></script>
+    <script src="index.js"></script>
 
-  <script src="../chosen.js"></script>
-  <script src="index.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="vendor/chosen.css" />
-  <link rel="stylesheet" type="text/css" href="../chosen-spinner.css" />
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../vendor/chosen/chosen.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/spinner.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/bootstrap.css" />
 
 </head>
+
 <body ng-controller="IndexCtrl">
-  <h1>Chosen Directive Example Usage</h1>
-  <h2>Chosen with a promise: {{foo | json}}</h2>
-  <select
-    chosen
-    multiple
-    allow-single-deselect="true"
-    data-placeholder="Choose Your Own Adventure"
-    no-results-text="'Tough luck'"
-    ng-model="foo"
-    ng-options="value for value in optionsFromQuery"
-    style="width:200px;">
-    <option value=""></option>
-  </select>
 
-  <h2>Chosen with a promised hash: {{baz | json}}</h2>
-  <select
-    chosen
-    allow-single-deselect="true"
-    data-placeholder="Choose Your Own Adventure"
-    no-results-text="'Tough luck'"
-    ng-model="baz"
-    ng-options="value for (key,value) in optionsFromQueryAsHash"
-    style="width:200px;">
-    <option value=""></option>
-  </select>
+    <div class="container">
 
-  <h2>Chosen with static options: {{ bar }}</h2>
-  <select chosen disable-search="true" ng-model="bar">
-    <option>Hi</option>
-    <option>This is fun</option>
-    <option>I like Chosen so much</option>
-    <option>I also like bunny rabbits</option>
-    <option value=""></option>
-  </select>
+        <div class="page-header">
+            <h2>Chosen Directive Example Usage</h2>
+        </div>
 
-  <h2>Passing options in as a hash: {{ woo }}</h2>
-  <select
-    ng-model="woo"
-    chosen="directiveOptions"
-    ng-options="value for value in optionsFromQuery"
-    style="width:200px;">
-    <option value=""></option>
-  </select>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Chosen with a promise: {{foo | json}}</h3>
+            </div>
+            <div class="panel-body">
+                <select
+                    chosen
+                    multiple
+                    allow-single-deselect="true"
+                    data-placeholder="Choose Your Own Adventure"
+                    no-results-text="'Tough luck'"
+                    ng-model="foo"
+                    ng-options="value for value in optionsFromQuery"
+                    style="width:200px;">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
 
-  <h2>Disabling the element with a message when the collection is empty: {{ whatever }}</h2>
-  <input type="checkbox" ng-model="emptyCollection" /> Empty?
-  <select
-    chosen
-    ng-model="whatever"
-    no-results-text="'Sorry no options for you'"
-    ng-options="value for value in emptyOptions"
-    style="width:200px;">
-    <option value=""></option>
-  </select>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Chosen with a promised hash: {{baz | json}}</h3>
+            </div>
+            <div class="panel-body">
+                <select
+                    chosen
+                    allow-single-deselect="true"
+                    data-placeholder="Choose Your Own Adventure"
+                    no-results-text="'Tough luck'"
+                    ng-model="baz"
+                    ng-options="value for (key,value) in optionsFromQueryAsHash"
+                    style="width:200px;">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
 
-  <h2>Changing the ngModel externally: {{ myPets }}</h2>
-  <select
-    multiple
-    ng-model="myPets"
-    ng-options="value as label for (value, label) in pets"
-    chosen
-    style="width:200px;">
-  </select>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Chosen with static options: {{ bar }}</h3>
+            </div>
+            <div class="panel-body">
+                <select chosen disable-search="true" ng-model="bar">
+                    <option>Hi</option>
+                    <option>This is fun</option>
+                    <option>I like Chosen so much</option>
+                    <option>I also like bunny rabbits</option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
 
-  <h2>Disabling the selection:</h2>
-  <label for="disabled">Disabled</label>
-  <input id="disabled" type="checkbox" ng-model="disabled">
-  <br>
-  <select chosen disable-search="true" ng-model="somemodel" ng-disabled="disabled">
-    <option>Great</option>
-    <option>fun</option>
-    <option>Great fun .. indeed</option>
-      <option value=""></option>
-  </select>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Passing options in as a hash: {{ woo }}</h3>
+            </div>
+            <div class="panel-body">
+                <select
+                    ng-model="woo"
+                    chosen="directiveOptions"
+                    ng-options="value for value in optionsFromQuery"
+                    style="width:200px;">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
 
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Disabling the element with a message when the collection is empty: {{ whatever }}</h3>
+            </div>
+            <div class="panel-body">
+                <input type="checkbox" ng-model="emptyCollection" /> Empty?
+                <select
+                    chosen
+                    ng-model="whatever"
+                    no-results-text="'Sorry no options for you'"
+                    ng-options="value for value in emptyOptions"
+                    style="width:200px;">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Changing the ngModel externally: {{ myPets }}</h3>
+            </div>
+            <div class="panel-body">
+                <input type="checkbox" ng-model="emptyCollection" /> Empty?
+                <select
+                    multiple
+                    ng-model="myPets"
+                    ng-options="value as label for (value, label) in pets"
+                    chosen
+                    style="width:200px;">
+                </select>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Disabling the selection:</h3>
+            </div>
+            <div class="panel-body">
+                <label for="disabled">Disabled</label>
+                <input id="disabled" type="checkbox" ng-model="disabled">
+                <br>
+                <select chosen disable-search="true" ng-model="somemodel" ng-disabled="disabled">
+                    <option>Great</option>
+                    <option>fun</option>
+                    <option>Great fun .. indeed</option>
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+
+    </div>
 </body>
-
 </html>
