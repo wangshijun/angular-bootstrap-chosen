@@ -1,3 +1,5 @@
+'use strict';
+
 (function() {
     var __indexOf = [].indexOf || function(item) {
         for (var i = 0, l = this.length; i < l; i++) {
@@ -32,7 +34,7 @@
 
         snakeCase = function(input) {
             return input.replace(/[A-Z]/g, function($1) {
-                return "_" + ($1.toLowerCase());
+                return '_' + ($1.toLowerCase());
             });
         };
 

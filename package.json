@@ -1,0 +1,44 @@
+{
+  "name": "angular-bootstrap-chosen",
+  "version": "0.1.1",
+  "description": "angular bootstrap chosen",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gulp": "^3.6.2",
+    "gulp-bump": "^0.1.8",
+    "gulp-clean": "^0.2.4",
+    "gulp-concat": "^2.2.0",
+    "gulp-csslint": "^0.1.4",
+    "gulp-jshint": "^1.6.1",
+    "gulp-load-plugins": "^0.5.1",
+    "gulp-minify-css": "^0.3.4",
+    "gulp-remove-use-strict": "^0.0.2",
+    "gulp-rename": "^1.2.0",
+    "gulp-size": "^0.3.1",
+    "gulp-uglify": "^0.3.0",
+    "gulp-util": "^2.2.14",
+    "jshint-stylish": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wangshijun/angular-bootstrap-chosen.git"
+  },
+  "keywords": [
+    "angular",
+    "bootstrap",
+    "chosen"
+  ],
+  "author": "wangshijun2010 <wangshijun2010@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangshijun/angular-bootstrap-chosen/issues"
+  },
+  "homepage": "https://github.com/wangshijun/angular-bootstrap-chosen"
+}
