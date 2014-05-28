@@ -8,7 +8,7 @@
     "docs"
   ],
   "dependencies": {
-    "chosen": "1.1.0",
+    "chosen": "https://github.com/harvesthq/chosen/releases/download/v1.1.0/chosen_v1.1.0.zip",
     "angular": ">=1.2.0"
   }
 }
