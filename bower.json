@@ -1,13 +1,14 @@
 {
-  "name": "angular-chosen-localytics",
-  "version": "1.0.6",
-  "main": "chosen.js",
+  "name": "angular-bootstrap-chosen",
+  "version": "1.0.0",
+  "main": "dist/chosen.js",
   "ignore": [
     "src",
-    "example"
+    "vendor",
+    "docs"
   ],
   "dependencies": {
-    "chosen": "https://github.com/harvesthq/chosen/releases/download/1.0.0/chosen_v1.0.0.zip",
+    "chosen": "1.1.0",
     "angular": ">=1.2.0"
   }
 }
