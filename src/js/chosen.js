@@ -21,6 +21,7 @@
             'disableSearchThreshold',
             'disableSearch',
             'enableSplitWordSearch',
+            'fulltextSearch',
             'inheritSelectClasses',
             'maxSelectedOptions',
             'placeholderTextMultiple',
