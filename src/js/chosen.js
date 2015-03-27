@@ -8,9 +8,9 @@
         return -1;
     };
 
-    angular.module('wangshijun.chosen', []);
+    angular.module('angular-bootstrap-chosen', []);
 
-    angular.module('wangshijun.chosen').directive('chosen', function() {
+    angular.module('angular-bootstrap-chosen').directive('chosen', function() {
         var CHOSEN_OPTION_WHITELIST, NG_OPTIONS_REGEXP, isEmpty, snakeCase;
 
         NG_OPTIONS_REGEXP = /^\s*(.*?)(?:\s+as\s+(.*?))?(?:\s+group\s+by\s+(.*))?\s+for\s+(?:([\$\w][\$\w]*)|(?:\(\s*([\$\w][\$\w]*)\s*,\s*([\$\w][\$\w]*)\s*\)))\s+in\s+(.*?)(?:\s+track\s+by\s+(.*?))?$/;
