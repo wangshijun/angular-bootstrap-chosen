@@ -1,6 +1,6 @@
 {
   "name": "angular-bootstrap-chosen",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "main": "dist/chosen.js",
   "ignore": [
     "src",
