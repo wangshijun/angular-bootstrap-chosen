@@ -11,7 +11,7 @@ use the "chosen" directive as an attribute on any select element.  Angular versi
 
 # Installation
 
-    $ bower install angular-chosen-localytics --save
+    $ bower install angular-bootstrap-chosen --save
 
 # Features
   * Works with `ngModel` and `ngOptions`
@@ -89,7 +89,7 @@ Include chosen-spinner.css and spinner.gif to show an Ajax spinner icon while yo
 
 ##### app.js
 ```js
-angular.module('App', ['ngResource', 'localytics.directives'])
+angular.module('App', ['ngResource', 'angular-bootstrap-chosen'])
 .controller('BeerCtrl', function($scope) {
   $scope.beers = $resource('api/beers').query()
 });
